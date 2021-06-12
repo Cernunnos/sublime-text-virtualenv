@@ -1,7 +1,7 @@
 Sublime Text - Virtualenv
 =========================
 
-Manage your virtualenvs directly from Sublime Text __3__.
+Manage your virtualenvs directly from Sublime Text __3__ or __4__.
 
 ## Features
 
@@ -10,13 +10,13 @@ editing your paths manually.
 - __Virtualenv search__. Finds virtualenvs in the open folders or _anywhere_ in your system.
 - __Activation/Deactivation__. Select or disable the current virtualenv easily.
 - __Create and delete virtualenvs__. With target python selection. Supports both the standard
-[virtualenv][] package and the built-in [venv][pyvenv] module from Python 3.3.
+[virtualenv][] package and the built-in [venv][pyvenv] module from Python 3.x.
 - __Integration with other packages__. SublimeREPL.
 
 
 ## Support
 
-Only Sublime Text 3. Tested in Linux and Windows but it should work in OS X as well.
+Sublime Text 3 or 4. Tested in Linux, Windows and macOS.
 
 
 ## Installation
