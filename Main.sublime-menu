@@ -1,37 +1,49 @@
-[{
-    "caption": "Preferences",
-    "id": "preferences",
-    "mnemonic": "n",
-    "children": [{
-        "caption": "Package Settings",
-        "id": "package-settings",
-        "mnemonic": "P",
-        "children": [{
-            "caption": "Virtualenv",
-            "children": [
-                {
-                    "caption": "README",
-                    "command": "open_file",
-                    "args": {
-                        "file": "${packages}/Virtualenv/README.md"
+[
+    {
+        "caption": "Preferences",
+        "children": [
+            {
+                "caption": "Package Settings",
+                "children": [
+                    {
+                        "caption": "Virtualenv",
+                        "children": [
+                            {
+                                "args": {
+                                    "file": "${packages}/Virtualenv/README.md"
+                                },
+                                "caption": "README",
+                                "command": "open_file"
+                            },
+                            {
+                                "caption": "-"
+                            },
+                            {
+                                "args": {
+                                    "base_file": "${packages}/Virtualenv/Virtualenv.sublime-settings",
+                                    "default": "// Settings in here override those in \"Virtualenv.sublime-settings\"\n\n{\n\t$0\n}\n"
+                                },
+                                "caption": "Settings",
+                                "command": "edit_settings",
+                                "platform": "!Windows"
+                            },
+                                                        {
+                                "args": {
+                                    "base_file": "${packages}/Virtualenv/Virtualenv (Windows).sublime-settings",
+                                    "default": "// Settings in here override those in \"Virtualenv (Windows).sublime-settings\"\n\n{\n\t$0\n}\n"
+                                },
+                                "caption": "Settings",
+                                "command": "edit_settings",
+                                "platform": "Windows"
+                            }
+                        ]
                     }
-                },
-                { "caption": "-" },
-                {
-                    "caption": "Settings – Default",
-                    "command": "open_file",
-                    "args": {
-                        "file": "${packages}/Virtualenv/Virtualenv.sublime-settings"
-                    }
-                },
-                {
-                    "caption": "Settings – User",
-                    "command": "open_file",
-                    "args": {
-                        "file": "${packages}/User/Virtualenv.sublime-settings"
-                    }
-                }
-            ]
-        }]
-    }]
-}]
+                ],
+                "id": "package-settings",
+                "mnemonic": "P"
+            }
+        ],
+        "id": "preferences",
+        "mnemonic": "n"
+    }
+]
